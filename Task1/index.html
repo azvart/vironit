@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/index.css">
+    <title>Weather || Gasanov V.S.</title>
+</head>
+<body>
+
+
+    <section class='container'>
+        <div class='fluid'>
+            
+            <h1>Прогноз Погоды</h1>
+            <div class='weather wrapper'>
+                <form>
+                    <select  placeholder='Select City' id='citySelect'>
+                        
+                    </select>
+                </form>
+
+            <div class="view-weather wrapper" id='view'>
+                <div class="view-info">
+                    <div class='main-info'>
+                        <h2 class='title'></h2>
+                        <p class='time'></p>
+                        <p class='gradus'></p>
+                    </div>
+                    <div class='more-info'>
+                        <p class='feel'></p>
+                        <p class='weather-info'></p>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="weather-daily-info">
+                
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src='./dist/bundle.js'></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+$color-black: "0,0,0";
+$select-background-color: transparent;
+$select-border-color: unquote("rgba(#{$color-black}, 0.12)") !default;
+$select-font-size: 16px;
+$select-color: unquote("rgba(#{$color-black}, 0.26)") !default;
+$select-padding: 4px;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+select {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: $select-padding 0;
+  font-size: $select-font-size;
+  color: $select-color;
+  border: none;
+  border-bottom: 1px solid $select-border-color;
+}
+select:focus {
+  outline: none}
+ 
+.container{
+    width: 100%;
+    .fluid{
+        max-width: 80%;
+        margin: auto;
+        text-align: center;
+        padding: 15px;
+        h1{
+            font-size: 36px;
+       
+        }
+        .weather{
+            width: 100%;
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            margin: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+        .weather:hover{
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    }
+}
+
+
+
+
+  .view-info{
+    
+    
+    align-items: center;
+      color:#fff;
+      display: flex;
+      flex-direction: row;
+    height: 50vh;
+    background: #fff;
+    border-radius: 2px;
+    justify-content: space-around;
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    .main-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+        align-items: center;
+    
+    }
+    .more-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+  }
+
+  .pad{
+    padding: 25px;
+  }
+
+  .weather-daily-info{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.9s cubic-bezier(.25,.8,.25,1);
+    width: 100%;
+    margin: 1em;
+    div{
+      display: flex;
+      flex-direction: row;
+    
+    background: #fff;
+    border-radius: 2px;
+    justify-content: space-around;
+    margin: 1rem;
+    
+      h3{
+        flex-grow: 1;
+        width: 33.3%;
+      }
+      p{
+        flex-grow: 1;
+        width: 33.3%;
+      }
+    }
+  }
